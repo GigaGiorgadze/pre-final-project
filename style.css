@@ -188,24 +188,27 @@ header>button:hover{
     top: 0;
     z-index: 1;
 }
-.destPics>span{
-    z-index: 2;
+.destInfo{
     position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    top: 85%;
+    z-index: 3;
+    align-items: center;
 }
-.destPics>span:first-of-type{
-    bottom: 10%;
+.destPics span:first-of-type{
     left: 5%;
     color: white;
     font-size: 16px;
 }
-.destPics>span:last-of-type{
-    bottom: 10%;
+.destPics span:last-of-type{
     color: white;
-    left: 75px;
     background-color: rgb(36, 167, 167);
     border-radius: 3vh;
-    width: 30%;
     text-align: center;
+    box-sizing: border-box;
+    padding: 1%;
 }
 .destPics:hover{
     transform: translateY(-5%);
@@ -226,6 +229,9 @@ header>button:hover{
     align-items: center;
 }
 
+input::placeholder{
+    font-size: 20px;
+}
 .subFilter{
     background-color: rgba(5, 19, 54, 0.3);
     position: absolute;
@@ -646,12 +652,9 @@ hr+p{
         height: 500px;
     }
     .destPics span{
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
-    .destPics span:last-of-type{
-        width: 50%;
-        left: 200px;
-    }
+
     .popularPics{
         height: 500px;
         width: 500px;
@@ -730,6 +733,25 @@ hr+p{
     }
     .columnsDiv{
         width: 100%;
+    }
+    .destInfo{
+        justify-content: space-evenly;
+        width: 70%;
+        top: 85%;
+        z-index: 3;
+        align-items: center;
+    }
+    .destPics span:first-of-type{
+        color: white;
+        font-size: 12px;
+    }
+    .destPics span:last-of-type{
+        color: white;
+        background-color: rgb(36, 167, 167);
+        border-radius: 3vh;
+        text-align: center;
+        box-sizing: border-box;
+        padding: .2%;
     }
 }
 
