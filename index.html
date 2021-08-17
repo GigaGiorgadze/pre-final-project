@@ -12,21 +12,51 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="./assets/download.webp" alt="">
-        <div id="navLinks">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Destination</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">destination details</a>
+                <a class="dropdown-item" href="#">Elements</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Blog
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a href="" class="dropdown-item">Blog</a>
+                    <a href="" class="dropdown-item">Single blog</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">
+                Contact
+            </a></li>
+          </ul>
+         
         </div>
         <div id="navInfo">
             <i class="fas fa-phone-alt"></i>
@@ -40,7 +70,6 @@
             </div>
             <button><i class="fas fa-search"></i></button>
         </div>
-        <i class="fas fa-bars"></i>
     </nav>
     <div class="clear"></div>
     <header>
@@ -147,7 +176,7 @@
                     </div>
                 </div>
                 <div class="popularPics">
-                    <img src="./assets/x3.png.pagespeed.ic.O3ye6I5nwK (1).webp" alt="">
+                    <img src="/assets/x3.png.pagespeed.ic.O3ye6I5nwK (1).webp" alt="">
                     <span class="placePrice">$500</span>
                     <div class="popularPicDesc">
                         <h3>London</h3>
@@ -272,12 +301,12 @@
                 <div class="columns">
                     <h1>Instagram</h1>
                    <div class="double">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x1.png.pagespeed.ic.LdZEUxVUOD.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x2.png.pagespeed.ic.GyH5qcaE5h.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x3.png.pagespeed.ic._oM9YgJOVj.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x4.png.pagespeed.ic.NpuJK11K8C.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x5.png.pagespeed.ic.adEyUiislQ.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/travelo/img/instagram/x6.png.pagespeed.ic.CRMjjStKwL.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x1.png.pagespeed.ic.LdZEUxVUOD.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x2.png.pagespeed.ic.GyH5qcaE5h.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x3.png.pagespeed.ic._oM9YgJOVj.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x4.png.pagespeed.ic.NpuJK11K8C.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x5.png.pagespeed.ic.adEyUiislQ.webp" alt="">
+                    <img id="instapics" src="https://preview.colorlib.com/theme/travelo/img/instagram/x6.png.pagespeed.ic.CRMjjStKwL.webp" alt="">
                    </div>
                 </div>
             </div>
@@ -285,5 +314,8 @@
             <p>Made by giga giorgadze with <i class="fa fa-heart"></i></p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
