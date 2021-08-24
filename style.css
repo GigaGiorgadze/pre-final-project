@@ -187,7 +187,6 @@ header>button:hover{
     margin: 10px;
     height: 240px;
     position: relative;
-    background-color: royalblue;
     transition: transform 0.3s;
 }
 .destPics img{
