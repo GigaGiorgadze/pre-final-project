@@ -54,6 +54,9 @@ body{
     font-size: 2vh;
     
 }
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
 #navInfo hr{
     height: 20%;
     border: 1px solid lightgray;
@@ -85,7 +88,7 @@ header{
     height: 85vh;
     width: 100vw;
     max-width: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,6 +190,7 @@ header>button:hover{
     margin: 10px;
     height: 240px;
     position: relative;
+    background-color: royalblue;
     transition: transform 0.3s;
 }
 .destPics img{
@@ -631,7 +635,7 @@ hr+p{
         width: 100%;
     }
     .tripsPic{
-        width: 100%;
+        width: 90%;
     }
     .tripsPics{
         width: 100%;
@@ -662,7 +666,7 @@ hr+p{
         margin-right: 5%;
     }
   #instapics{
-      width: 200px;
+      width: 100px;
   }
   #footerLogo{
       width: 30%;
